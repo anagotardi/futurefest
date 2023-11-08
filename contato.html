@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Contato - Fevasgo ONG</title>
+  <link rel="shortcut icon" href="imagens/logo-fevasco.png" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/paginas/contato.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="firstMenu">
+      <div class="flex-between-center firstMenu">
+        <nav class="nav">
+          <div id="logo" class="logo">
+            <img src="imagens/logo-fevasco.png" alt="  Fevasco Pets" />
+          </div>
+          <ul class="lista-menu">
+            <li class="item-menu"><a href="index.html">Home</a></li>
+            <li class="item-menu"><a href="quem-somos.html">Quem Somos</a></li>
+          </ul>
+          <ul class="lista-menu">
+            <li class="item-menu sub-menu-list">
+              <a href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="secondMenu">
+      <div class="flex-between">
+        <div id="logo" class="logo">
+          <a href="index.html">
+            <picture>
+              <img src="imagens/logo-fevasco.png" alt="  Fevasco Pets" />
+            </picture>
+          </a>
+        </div>
+        <nav class="nav nav-2">
+          <a href="javascript:void(0)" id="btn-mobile">
+            Menu
+            <span id="hamburguer"></span>
+          </a>
+          <ul class="lista-menu">
+            <li class="item-menu"><a href="index.html"> Home</a></li>
+            <li class="item-menu"><a href="quem-somos.html"> Quem Somos</a></li>
+            <li class="item-menu sub-menu-list">
+              <a href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="fotoiniciocontato">
+      <div class="box-title-banner-home">
+        <h1>Contato</h1>
+        <p>Nos conte sua experiência ou feedback!</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="formcontato">
+        <form action="/formulario-contato" method="post">
+          <div>
+            <label for="nome">Nome</label>
+            <input placeholder="Nome e Sobrenome" type="texto" id="nome" name="nome_usuario">
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input placeholder="exemplo@gmail.com" type="email" id="email" name="email_usuario">
+          </div>
+          <div>
+            <label for="telefone">Telefone</label>
+            <input placeholder="(99) 99999-9999" type="telefone" id="telefone" name="telefone_usuario">
+          </div>
+          <div>
+            <label for="cep">CEP e endereço da residência</label>
+            <input placeholder="Rua ****, n°: ***, São Paulo, *****-***" type="text" id="cep" name="cep_usuario">
+          </div>
+          <div class="input-texto-contato">
+            <label for="texto">Abra seu coração para nossa equipe!</label>
+            <textarea rows="4" placeholder="Digite um texto aqui..." type="texto" id="texto" name="texto_usuario"></textarea height="150">
+              </div>
+              <div>
+                <label for="nome">Nome do seu pet</label>
+                <input placeholder="Nome do seu pet aqui!" type="texto" id="nomepet" name="nome_pet">
+              </div>
+              <div>
+                <label for="raca">Raça do animal</label>
+                <input placeholder="Exemplo de raça: pitbull" type="text" id="raca" name="raca_pet">
+              </div>
+              <div>
+                <label for="sexo">Sexo do pet</label>
+                <input placeholder="Feminino ou masculino" type="text" id="sexo" name="sexo_pet">
+              </div>
+              <div>
+                <label for="idade">Idade do seu pet</label>
+                <input placeholder="Exemplo: 5 anos" type="text" id="idade" name="idade_pet">
+              </div>
+              <div class="button_contato">
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <div class="duvidas-frequentes">
+          <div class="box-border-top">
+            <p class="clica-abrir">
+              Histórias de Sucesso 
+            </p>
+            <p class="panel">
+              Adotantes que tiveram a experiência positiva de usar o chip de rastreamento para localizar seus cachorros perdidos podem compartilhar suas histórias como testemunhos da eficácia desse sistema.
+            </p>
+          </div>
+          <div class="box-border-top">
+            <p class="clica-abrir">
+              Confiança na Adoção
+            </p>
+            <p class="panel">
+              A presença de um chip de rastreamento pode aumentar a confiança dos adotantes em adotar um cachorro, especialmente se eles têm receios sobre a possibilidade de o animal fugir ou se perder. Isso pode incentivar mais pessoas a considerarem a adoção.
+            </p>
+          </div>
+          <div class="box-border-top">
+            <p class="clica-abrir">
+              Responsabilidade Estendida
+            </p>
+            <p class="panel">
+              A presença do chip de rastreamento pode lembrar os adotantes da responsabilidade que têm ao cuidar do cachorro. Eles podem se sentir mais inclinados a garantir que o animal permaneça seguro e protegido.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section class="box-bg-footer">
+        <div class="container">
+          <div class="flex">
+            <div class="box-25 box-mob-100 ">
+              <div class="box-footer-itens">
+                <div id="logo" class="logo">
+                  <a href="#home">
+                    <picture>
+                      <img src="imagens/logo-fevasco.png" alt="  Fevasco Pets" />
+                    </picture>
+                  </a>
+                </div>
+                <p>
+                  Projeto sendo desenvolvido por alunos da FIAP - Com a linguagem de marcação HTML5, linguagem de estilização CSS3 e Linguagem de programação Javascript.
+                </p>
+              </div>
+            </div>
+            <div class="box-25 box-mob-100 ">
+              <div class="box-footer-itens">
+                <h5>Institucional</h5>
+                <ul>
+                  <li>
+                    >
+                    <a href="index.html" target="_blank">Home</a>
+                  </li>
+                  <li>
+                    >
+                    <a href="quem-somos.html" target="_blank">Quem Somos</a>
+                  </li>
+                  <li>
+                    >
+                    <a href="contato.html" target="_blank">Contato</a>
+                  </li>
+                   
+                </ul>
+              </div>
+            </div>
+            <div class="box-25 box-mob-100 ">
+              <div class="box-footer-itens">
+                <h5>Desenvolvedores</h5>
+                <ul>
+                  <li>> <a href="https://github.com/" target="_blank">Ana Gotardi, Maria Alves, Maytê Silva</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

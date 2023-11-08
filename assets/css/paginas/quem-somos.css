@@ -1,0 +1,77 @@
+.fotoinicioBlog {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../../../imagens/Banner/banner-fev.png);
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  margin-top: 0px;
+  filter: drop-shadow(2px 2px 20px #333333);
+}
+
+.box-title-banner-home h1 {
+  filter: drop-shadow(2px 2px 10px #333333);
+}
+
+.box-title-banner-home p {
+  margin: 10px 0;
+  color: #fff;
+  text-shadow: 0px 0px 6px #333;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.box-bg-quem-somos,
+.box-bg-quem-somos-desk,
+.box-bg-quem-somos-mob {
+  margin: 50px 0;
+}
+
+.box-bg-quem-somos-mob {
+  display: none;
+}
+
+.box-imgleft-quem-somos img {
+  border-radius: 20px;
+  filter: drop-shadow(-5px 5px 10px var(--black));
+}
+
+.box-imgright-quem-somos img {
+  border-radius: 20px;
+  filter: drop-shadow(5px 5px 10px var(--black));
+}
+
+
+.box-conteudo-quem-somos-left h2,
+.box-conteudo-quem-somos-right h2 {
+  margin: 15px 0;
+}
+
+.box-conteudo-quem-somos-left p {
+  width: 50ch;
+  margin: 15px 0 15px auto;
+}
+
+.box-conteudo-quem-somos-right p {
+  width: 50ch;
+  margin: 15px 0;
+}
+
+@media(max-width:768px) {
+  .box-bg-quem-somos-desk {
+    display: none;
+  }
+
+  .box-bg-quem-somos-mob {
+    display: block;
+  }
+
+  .box-conteudo-quem-somos-left p,
+  .box-conteudo-quem-somos-right p {
+    width: 100%;
+    text-align: justify;
+  }
+  .box-title-banner-home{
+    top: 20% !important;
+  }
+}

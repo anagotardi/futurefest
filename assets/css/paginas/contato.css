@@ -1,0 +1,110 @@
+/* Foto Inicio */
+
+.fotoiniciocontato {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../../../imagens/Banner/banner-fev.png);
+  background-position: center;
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  margin-top: 0px;
+  filter: drop-shadow(2px 2px 20px #333333);
+}
+
+.box-title-banner-home h1 {
+  filter: drop-shadow(2px 2px 10px #333333);
+}
+
+.box-title-banner-home p{
+  margin: 10px 0;
+  font-size: 13px;
+}
+
+.formcontato {
+  /* Centralizar o formulário na pagina */
+  margin: 3% auto;
+  max-width: 500px;
+  width: 100%;
+  /* Ver o esboço do formulário */
+  padding: 1em;
+  border: none;
+  border-radius: 20px;
+}
+
+.button_contato {
+  margin-top: 1em;
+  text-align: center;
+}
+
+
+
+.input-texto-contato input {
+  height: 100px;
+}
+
+.button_contato button {
+  width: 70%;
+  border-radius: 25px;
+  background-color: #b9dc9c;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.formcontato label {
+  /* Para garantir que todos os rótulos tenham o mesmo tamanho e estejam devidamente alinhados*/
+  display: inline-block;
+  margin: 1%;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* 
+  Para garantir que todos os campos de texto tenham as mesmas configurações de fonte
+       Por padrão, as áreas de texto possuem a mesma fonte */
+  font: 1em sans-serif;
+  resize: none;
+  padding: 2% 3%;
+  border-radius: 25px;
+
+  /* Para dar o mesmo tamanho a todos os campos de texto*/
+  width: 99%;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: 'Poopins';
+
+  /* Para harmonizar o aspecto e a sensação da borda do campo de texto */
+  border: 1px solid #ececec;
+  color: #999;
+  background-color: #ececec;
+}
+
+input:focus,
+textarea:focus {
+  /* Para dar um pouco de destaque aos elementos ativos*/
+  border-color: #3fb592 !important;
+}
+
+textarea {
+  /* Para alinhar corretamente campos de texto multilinha com seus rótulos */
+  vertical-align: top;
+
+  /* Para dar espaço suficiente para digitar algum texto */
+  height: 9em;
+}
+
+.button {
+  /* Para posicionar os botões na mesma posição dos campos de texto */
+  padding-left: 90px;
+  /* mesmo tamanho que os elementos do rótulo */
+}
+
+button {
+  /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço
+       entre os rótulos e seus campos de texto*/
+  margin-left: .5em;
+}
+
+/* Foto Inicio */
