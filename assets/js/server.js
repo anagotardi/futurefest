@@ -1,62 +1,55 @@
-//requisitando os módulos
-
 const mongoose = require("mongoose");
 const express = require("express");
 const bodyParser = require("body-parser");
 
-//configurando o express para o postman e para usar a página
-
 const app = express();
+
 app.use(bodyParser.urlencoded({
     extended: true
 }));
+
 app.use(bodyParser.json());
 
-//configurando o banco de dados
+const port = 3000;
 
 mongoose.connect("mongodb://127.0.0.1:27017/futurefest", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
 
-//criando a model do usuário
-
 const UsuarioSchema = new mongoose.Schema({
-    nome: {type: String},
+    nome: {type: String,required: true},
     email: {type: String,required: true},
-    senha: {type: String},
-    telefone: {type: Number},
-    endereco: {type: String},
-    feedback: {type: String}
+    telefone: {type: Number,required: true},
+    cep: {type: String,required: true},
+    feedback: {type: String,required: true}
 });
 
-//criando a model do pet
-
 const PetSchema = new mongoose.Schema({
-    nome: {type: String},
+    nomePet: {type: String,required: true},
     raca: {type: String},
     sexo: {type: String},
-    idade: {ype: Number}
+    idade: {type: Number}
 })
 
-//criando a model do chip
-//falta arrumar no site!!!!!!!!*********
-
-
 const Usuario = mongoose.model("Usuario", UsuarioSchema);
+
 const Pet = mongoose.model("Pet", PetSchema)
 
 app.post("/cadastrousuario", async (req, res) => {
     const nome = req.body.nome;
     const email = req.body.email;
-    const senha = req.body.senha
     const telefone = req.body.telefone;
-    const endereco = req.body.endereco;
-    const feedback = req.body.feedback;
+    const cep = req.body.cep;
+    const feedback = req.body.feedback
     const usuario = new Usuario({
+        nome: nome,
         email: email,
-        senha: senha
+        telefone: telefone,
+        cep: cep,
+        feedback: feedback
     });
+    
     try {
         const newUsuario = await usuario.save();
         res.json({
@@ -68,25 +61,29 @@ app.post("/cadastrousuario", async (req, res) => {
 });
 
 app.post("/cadastropet", async (req, res) => {
-    const nome = req.body.nome;
+    const nomePet = req.body.nomePet;
     const raca = req.body.raca;
     const sexo = req.body.sexo;
     const idade = req.body.idade;
-    const Pet = new Pet({
-        nome: nome,
+
+    const pet = new Pet({
+        nomePet: nomePet,
         raca: raca,
         sexo: sexo,
-        idade: idade,
+        idade: idade
     });
-
     try {
-        const newPet = await Pet.save();
-        res.json({error: null,msg: "Cadastro ok",PetId: newPet._id});
-
-    } catch (error) {}});
+        const newPet = await pet.save();
+        res.json({
+            error: null,
+            msg: "Cadastro ok",
+            PetId: newPet._id
+        });
+    } catch (error) {}
+});
 
 app.get("/", async (req, res) => {
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "../../index.html");
 });
 
 app.listen(port, () => {

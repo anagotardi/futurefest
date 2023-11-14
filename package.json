@@ -7,13 +7,13 @@
     "nodemon": "^3.0.1",
     "parser": "^0.1.4"
   },
-  "name": "supermart",
+  "name": "futurefest",
   "description": "",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./server.js localhost:3001"
+    "start" : "nodemon ./js/server.js localhost:3000"
   },
   "keywords": [],
   "author": "",
